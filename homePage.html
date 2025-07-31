@@ -46,6 +46,12 @@
       color: #e0e7ff;
     }
 
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
     .btn-primary {
       background-color: #ffd54f;
       color: #333;
@@ -59,6 +65,8 @@
       box-shadow: 0 4px 15px rgba(255, 213, 79, 0.6);
       text-decoration: none;
       display: inline-block;
+      min-width: 140px;
+      text-align: center;
     }
 
     .btn-primary:hover {
@@ -74,18 +82,27 @@
       p {
         font-size: 1rem;
       }
+      .buttons {
+        flex-direction: column;
+        gap: 15px;
+      }
       .btn-primary {
         padding: 12px 30px;
         font-size: 1rem;
+        min-width: auto;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Welcome</h1>
+    <h1>Welcome to Our Website</h1>
     <p>We’re glad you’re here! Explore our services, learn about our mission, and discover how we can help you achieve your goals.</p>
-    <a href="#learn-more" class="btn-primary">Learn More</a>
+    <div class="buttons">
+      <a href="https://karthikreddy7414.github.io/lab4/index1.html" class="btn-primary" target="_blank" rel="noopener noreferrer">Lab 4 - Page 1</a>
+      <a href="https://karthikreddy7414.github.io/lab4/index.html" class="btn-primary" target="_blank" rel="noopener noreferrer">Lab 4 - Page 2</a>
+    </div>
   </div>
 </body>
 </html>
+
